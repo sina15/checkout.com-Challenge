@@ -1,0 +1,1 @@
+export const mainUrl = "https://checkout-test.cdn.prismic.io/api/v2";
