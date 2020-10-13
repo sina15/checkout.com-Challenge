@@ -12,7 +12,6 @@ height:${props => props.height + "px"};
 background:transparent;
 transition: all 300ms ease-in-out;
 animation ${myfadeIn} 300ms linear;
-// margin-right:150px;
 @media only screen and (max-width :1025px){
     margin-left:20px;
 }
@@ -66,7 +65,7 @@ const IntroComponent = ({ width, height, apiData }) => {
             console.log(data.body[0].primary)
         })
     }, [apiData])
-    
+
     return (
 
         <Intro width={width} height={height} >

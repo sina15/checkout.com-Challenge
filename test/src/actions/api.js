@@ -32,10 +32,10 @@ export const fetchProducts = async (action, ref, enctype) => {
             headers: { "Content-Type": enctype }
         })
         let {data:{title,body}} = response.data.results[0];
-
         return {title,body};
 
     } catch (error) {
+      
          return {}
     }
 }

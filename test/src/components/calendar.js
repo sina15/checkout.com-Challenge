@@ -4,6 +4,7 @@ import { drawCenter, drawLine, setStatLineCord, setTransLineCord } from '../acti
 import StatementComponent from './statement';
 import TransactionComponent from './transactions';
 
+//the container section
 const Calendar = styled.section`
  min-width:${props => props.width + "px" || "100px"};
  min-height:${props => props.height + "px" || "100px"};
@@ -14,7 +15,7 @@ const Calendar = styled.section`
     margin-top:20px;
  }
 `
-
+//animation 
 const fadeIn = keyframes`
 from {opacity:0}
 to {opacity:1}
@@ -29,7 +30,7 @@ const Canvas = styled.canvas`
  transition: all 2s ease;
 
 `
-
+//Calendar content
 const CalendarContent = styled.section`
  width:${props => props.width + "px" || "100px"};
  height:${props => props.height + "px" || "100px"};
@@ -124,12 +125,11 @@ const CalendarComponent = ({ height, width }) => {
 
         if (canvas.getContext) {
             const ctx = canvas.getContext('2d');
-            setCtx(ctx)
-            console.log("canvas suppported")
+            setCtx(ctx)            
         } else {
-            console.log("no canvas ")
+            throw Error
         }
-    }, [])
+    }, [ctx])
 
     //handler for mouse over event
     const handleMouseEnter = e => {
