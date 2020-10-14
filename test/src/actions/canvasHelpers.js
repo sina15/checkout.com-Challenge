@@ -43,7 +43,7 @@ export const setStatLineCord = (x, y, width, height) => {
     let midY = height / 2;
 
     if (width - x > midX) {
-        newCord.x = x + midX;
+        newCord.x = x + (midX/2);
     }
     else {
         if (x + 50 < width) newCord.x = x + 50;
