@@ -1,4 +1,4 @@
-# checkout.com-Challengehttps://github.com/sina15/checkout.com-Challenge
+# checkout.com-Challenge
 My checkout.com- Front end Challenge
 
 # To run the application for the first time follow the following procedures: 
