@@ -1,5 +1,3 @@
-# checkout.com-Challenge
-My checkout.com- Front end Challenge
 
 # To run the application for the first time follow the following procedures: 
   - Open cmd or terminal 
